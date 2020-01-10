@@ -8,11 +8,11 @@ struct Todo:Equatable, Codable{
     let done:Bool
     let donedate:Date?
 
-    static func defaultDoneDate()->Date{
+    static func defaultDueDate()->Date{
         Date().addingTimeInterval(24 * 60 * 60)
     }
 
     static func ==(lhs:Todo, rhs:Todo)->Bool{
-        lhs.detail == rhs.detail && lhs.tag! == rhs.tag && lhs.duedate == rhs.duedate
+        lhs.detail == rhs.detail && lhs.tag == rhs.tag && lhs.duedate == rhs.duedate
     }
 }
