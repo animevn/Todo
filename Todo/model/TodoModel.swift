@@ -41,7 +41,7 @@ struct TodoModel:Codable{
         UserDefaults.standard.set(data, forKey: "save")
     }
 
-    private func load()->TodoModel{
+    func load()->TodoModel{
         guard let data = UserDefaults.standard.data(forKey: "save") else {return TodoModel()} 
         return (try? JSONDecoder().decode(TodoModel.self, from: data)) ?? TodoModel()
     }

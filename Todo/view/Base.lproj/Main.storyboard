@@ -39,9 +39,6 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
-                                <connections>
-                                    <segue destination="cW5-Qs-1Wm" kind="show" identifier="edit_todo" id="PtK-Im-snp"/>
-                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -56,6 +53,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <segue destination="cW5-Qs-1Wm" kind="show" identifier="edit_todo" id="xcN-hS-tBa"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ilG-7q-8Rb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -197,8 +197,7 @@ Unicode: U+1F44D, UTF-8: F0 9F 91 8D</string>
                     </tableView>
                     <navigationItem key="navigationItem" id="kRx-h5-0X8"/>
                     <connections>
-                        <outlet property="dpDate" destination="gp4-MX-jbq" id="BJl-5U-5yR"/>
-                        <outlet property="dpDuedate" destination="gp4-MX-jbq" id="Sim-Mg-x94"/>
+                        <outlet property="dpDueDate" destination="gp4-MX-jbq" id="NVN-3e-zXz"/>
                         <outlet property="lbDuedate" destination="z7e-i6-ddL" id="dgo-H5-8ED"/>
                         <outlet property="lbTag" destination="y9R-2d-9s7" id="515-iA-p85"/>
                         <outlet property="tfDetail" destination="1Sd-sE-DM2" id="00m-xn-wcu"/>
@@ -272,6 +271,6 @@ Unicode: U+1F44D, UTF-8: F0 9F 91 8D</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="JdW-vj-vqF"/>
+        <segue reference="xcN-hS-tBa"/>
     </inferredMetricsTieBreakers>
 </document>
