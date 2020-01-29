@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A9073AA7C50BE908D99F94B /* TodoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A90702D00EB6E995B7E22DE /* TodoModel.swift */; };
+		4A907A4145026B3C3092D514 /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A907FD9FE2AD1959926C559 /* Todo.swift */; };
 		51688D5423E14225006D1470 /* TodoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51688D5323E14225006D1470 /* TodoController.swift */; };
 		51688D5623E14274006D1470 /* EditController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51688D5523E14274006D1470 /* EditController.swift */; };
 		51688D5823E142C5006D1470 /* TagController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51688D5723E142C5006D1470 /* TagController.swift */; };
@@ -32,6 +34,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		4A90702D00EB6E995B7E22DE /* TodoModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TodoModel.swift; sourceTree = "<group>"; };
+		4A907FD9FE2AD1959926C559 /* Todo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		51688D5323E14225006D1470 /* TodoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoController.swift; sourceTree = "<group>"; };
 		51688D5523E14274006D1470 /* EditController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditController.swift; sourceTree = "<group>"; };
 		51688D5723E142C5006D1470 /* TagController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagController.swift; sourceTree = "<group>"; };
@@ -79,6 +83,8 @@
 		51CA665B23C621D900D0E8DE /* model */ = {
 			isa = PBXGroup;
 			children = (
+				4A907FD9FE2AD1959926C559 /* Todo.swift */,
+				4A90702D00EB6E995B7E22DE /* TodoModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -216,6 +222,8 @@
 				51688D5623E14274006D1470 /* EditController.swift in Sources */,
 				51688D5823E142C5006D1470 /* TagController.swift in Sources */,
 				51688D5423E14225006D1470 /* TodoController.swift in Sources */,
+				4A907A4145026B3C3092D514 /* Todo.swift in Sources */,
+				4A9073AA7C50BE908D99F94B /* TodoModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
