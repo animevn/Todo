@@ -39,6 +39,9 @@
                                         </label>
                                     </subviews>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="cW5-Qs-1Wm" kind="show" identifier="edit_todo" id="PtK-Im-snp"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -49,14 +52,10 @@
                     <navigationItem key="navigationItem" title="TodoList" id="ycV-x9-f0E">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="9Ix-0o-qzs">
                             <connections>
-                                <action selector="addTodo:" destination="6gQ-2w-xiJ" id="Hi3-tu-AeJ"/>
-                                <segue destination="cW5-Qs-1Wm" kind="show" identifier="new" id="JdW-vj-vqF"/>
+                                <segue destination="cW5-Qs-1Wm" kind="show" identifier="new_todo" id="JdW-vj-vqF"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
-                    <connections>
-                        <segue destination="cW5-Qs-1Wm" kind="show" identifier="edit" id="KHo-O3-Cta"/>
-                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ilG-7q-8Rb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -115,6 +114,9 @@
                                                 <constraint firstAttribute="trailing" secondItem="y9R-2d-9s7" secondAttribute="trailing" constant="10" id="x1o-K4-un2"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="Xny-8w-JGT" kind="show" identifier="edit_tag" id="qyn-hp-Pr2"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="kHo-7F-xap">
                                         <rect key="frame" x="0.0" y="128" width="375" height="50"/>
@@ -196,7 +198,6 @@ Unicode: U+1F44D, UTF-8: F0 9F 91 8D</string>
                         <outlet property="lbDuedate" destination="z7e-i6-ddL" id="s7g-Y7-ZsP"/>
                         <outlet property="lbTag" destination="y9R-2d-9s7" id="iiP-SV-aoY"/>
                         <outlet property="tfDetail" destination="1Sd-sE-DM2" id="S28-99-nFY"/>
-                        <segue destination="Xny-8w-JGT" kind="show" identifier="tag" id="xYb-As-esL"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OsI-ui-dEJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -267,6 +268,6 @@ Unicode: U+1F44D, UTF-8: F0 9F 91 8D</string>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="KHo-O3-Cta"/>
+        <segue reference="PtK-Im-snp"/>
     </inferredMetricsTieBreakers>
 </document>
