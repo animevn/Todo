@@ -106,8 +106,6 @@ extension TodoController:EditControllerDelegate{
         tableView.reloadData()
         navigationController?.popViewController(animated: true)
     }
-
-
 }
 
 

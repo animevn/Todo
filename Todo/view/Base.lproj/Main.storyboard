@@ -114,9 +114,6 @@
                                                 <constraint firstAttribute="trailing" secondItem="y9R-2d-9s7" secondAttribute="trailing" constant="10" id="x1o-K4-un2"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="Xny-8w-JGT" kind="show" identifier="edit_tag" id="qyn-hp-Pr2"/>
-                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="50" id="kHo-7F-xap">
                                         <rect key="frame" x="0.0" y="128" width="375" height="50"/>
@@ -201,6 +198,7 @@ Unicode: U+1F44D, UTF-8: F0 9F 91 8D</string>
                         <outlet property="lbDuedate" destination="z7e-i6-ddL" id="dgo-H5-8ED"/>
                         <outlet property="lbTag" destination="y9R-2d-9s7" id="515-iA-p85"/>
                         <outlet property="tfDetail" destination="1Sd-sE-DM2" id="00m-xn-wcu"/>
+                        <segue destination="Xny-8w-JGT" kind="show" identifier="edit_tag" id="Mgq-Hz-LDY"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OsI-ui-dEJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -242,7 +240,7 @@ Unicode: U+1F44D, UTF-8: F0 9F 91 8D</string>
                     <navigationItem key="navigationItem" title="Tag List" id="vTO-NY-r9n">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3UF-xu-CAV">
                             <connections>
-                                <action selector="addTag:" destination="Xny-8w-JGT" id="nOF-3V-6y6"/>
+                                <action selector="onButtonAddPressed:" destination="Xny-8w-JGT" id="HMk-xI-bbs"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>

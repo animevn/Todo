@@ -59,6 +59,18 @@ class EditController:UITableViewController{
         updateUI()
         updateDueDate()
     }
+
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let destination = segue.destination as? TagController,
+              segue.identifier == "edit_tag" else {return}
+        destination.title = "Tag List"
+        destination.todoModel = todoModel
+        destination.returnData = {[weak self] tag, todoModel in
+            self?.todoModel = todoModel
+            self?.tag = tag
+            self?.lbTag.text = tag.detail
+        }
+    }
 }
 
 extension EditController{
@@ -79,8 +91,14 @@ extension EditController{
     }
     public override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row{
-        case 3: saveAndReturn()
-        default: return
+        case 1:
+            performSegue(withIdentifier: "edit_tag", sender: self)
+            break
+        case 3:
+            saveAndReturn()
+            break
+        default:
+            return
         }
     }
 }
