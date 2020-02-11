@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F1BFB81D23136477000CAFF7"
-               BuildableName = "Todo.app"
-               BlueprintName = "Todo"
-               ReferencedContainer = "container:Todo.xcodeproj">
+               BlueprintIdentifier = "B562F03D656679DA04EE0D23432D36E8"
+               BuildableName = "Pods_Todo.framework"
+               BlueprintName = "Pods-Todo"
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -40,16 +40,6 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <BuildableProductRunnable
-         runnableDebuggingMode = "0">
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "F1BFB81D23136477000CAFF7"
-            BuildableName = "Todo.app"
-            BlueprintName = "Todo"
-            ReferencedContainer = "container:Todo.xcodeproj">
-         </BuildableReference>
-      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
